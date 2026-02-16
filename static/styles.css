@@ -45,7 +45,7 @@ body{
 }
 .button:hover{
     color: #ffffff;
-    background-color: #000000;
+    background-color: transparent;
     border: 1px #ffffff solid;
     cursor: pointer;
 }
@@ -54,7 +54,7 @@ body{
     color: #000000;
 }
 .button:hover span{
-    background: #000000;
+    background: transparent;
     color: #ffffff;
 }
 .button-alt{
@@ -73,16 +73,16 @@ body{
 }
 .button-alt:hover{
     color: #000000;
-    background-color: #ffffff;
+    background-color: transparent;
     border: 1px #000000 solid;
     cursor: pointer;
 }
-.button span{
-    background: #ffffff;
-    color: #000000;
+.button-alt span{
+    background: #000000;
+    color: #ffffff;
 }
-button:hover span{
-    background: #ffffff;
+.button-alt:hover span{
+    background: transparent;
     color: #000000;
 }
 
@@ -102,22 +102,15 @@ h3{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 
 header{
     padding:32px 64px;
-    position: fixed;
-    width: 100%;
     color: #ffffff;
 }
-.inner-header{
-    border: #ffffff 1px solid;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding:24px;
-}
+
 .logo{
     width: 48px;
     height: 48px;
@@ -125,13 +118,12 @@ header{
 
 
 .hero{
-    padding:0px 64px;
+    padding:96px 64px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 32px;
     color: #ffffff;
-    height: 100vh;
 }
 .hero p{
     color: #bbbbbb;
@@ -163,7 +155,7 @@ header{
     width: 100%;
     border: #000000 1px solid;
 }
-.work .grid div div a{
+.work .grid div a{
     text-decoration: none;
 }
 .work .grid div div{
