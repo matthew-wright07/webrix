@@ -19,25 +19,27 @@
 </head>
 <body>
     <div class="bg-image">
-        <header class="flex justify-between items-center">
-            <img src="/static/logo.svg" class="logo"/>
+        <header id="home" class="flex justify-between items-center">
+            <a href="#home">
+                <img src="/static/logo.svg" class="logo"/>
+            </a>
             <nav class="flex items-center gap-4">
-                <a>Home</a>
-                <a>Work</a>
-                <a>About</a>
-                <a>Contact</a>
+                <a href="#home">Home</a>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </nav>
-            <button class="button">Let's Chat <span class="material-symbols-outlined">arrow_forward</span></button>
+            <a href="#contact" class="button">Let's Chat <span class="material-symbols-outlined">arrow_forward</span></a>
         </header>
         <div class="hero">
             <h1>We Create High Converting Websites</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div>
-                <button class="button">Contact <span class="material-symbols-outlined">arrow_forward</span></button>
+                <a href="#contact" class="button">Contact <span class="material-symbols-outlined">arrow_forward</span></a>
             </div>
         </div>
     </div>
-    <div class="work">
+    <div id="work" class="work">
         <h2>Our Work</h2>
         <div class="grid">
             <div>
@@ -59,11 +61,77 @@
                 <h3>Online Toolkit</h3>
                 <p>utilly.io</p>
                 <p>Created online toolkit from scratch and helped to boost the SEO rating and backlinks</p>
-                <div><a href="https://aimadeeasier.com" class="flex items-center button-alt" target="_blank">Explore <span class="material-symbols-outlined">arrow_outward</span></a></div>
+                <div><a href="https://utilly.io" class="flex items-center button-alt" target="_blank">Explore <span class="material-symbols-outlined">arrow_outward</span></a></div>
             </div>
         </div>
     </div>
+    <div class="about" id="about">
+        <div>
+            <h2>About Us</h2>
+            <p>At Webrix, we build websites that don’t just look good — they work. Based in Austin, we’re a creative web agency focused on designing and developing modern, high-performing websites for businesses that want to stand out in a crowded digital world.
 
+                We believe your website should be more than just an online presence. It should load fast, feel intuitive, look sharp on every device, and most importantly, drive real results. Every project we take on is built with intention — blending strong design, clean development, and smart strategy to create digital experiences that convert visitors into customers.
+
+                From custom website design and full-stack development to performance optimization and ongoing support, we help businesses launch, grow, and scale online with confidence. Whether you're a startup building from scratch or an established company ready for a serious upgrade, Webrix creates websites that are modern, scalable, and built to perform.
+
+                Webrix — Built to Impress. Engineered to Perform.
+            </p>
+            <div>
+                <a href="#contact" class="button">Get In Touch <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+        </div>
+        <div>
+            <img src="/static/about.png"/>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div>
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div>
+                <p>contact@webrix.io</p>
+                <p>512-586-4786</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>Name</p>
+                <input/>
+            </div>
+            <div>
+                <p>Email</p>
+                <input/>
+            </div>
+            <div>
+                <p>Message</p>
+                <input/>
+            </div>
+            <div>
+                <p>Other</p>
+                <textarea></textarea>
+            </div>
+            <div class="button-div">
+                <button class="button-alt">Send <span class="material-symbols-outlined">send</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="flex flex-col">
+            <a href="#home">
+                <img src="/static/logo.svg" class="logo"/>
+            </a>
+            <p>contact@webrix.io</p>
+            <p>512-586-4786</p>
+        </div>
+        <div class="flex">
+            <a href="#home">Home</a>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>&copy; Webix 2026</p>
+    </div>
+    
     <script src="/static/script.js"></script>
 </body>
 </html>
